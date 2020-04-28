@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Logica proposicional</title>
+
+<!--JQuery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<!--Bootstrap-->
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<script src="js/algoritmos.js"></script>
+<link rel="stylesheet" href="css/estilo.css" media="screen">
+
+<meta property="og:url" content="http://pillan.inf.uct.cl/~imolina/" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Sistema de enseñanza y resolucion" />
+<meta property="og:description" content="Sistema de enseñanza y resolucion de problemas algebraicos" />
+<meta property="og:image" content="http://civilgeeks.com/wp-content/uploads/2011/10/posavasos-matematicos.jpg" />
+<meta name="description" content="Free responsive web template Istria by Valeron design studio - Realize Your Business Goals" />
+<meta name="msapplication-tap-highlight" content="no" />
+<meta name="robots" content="index,follow,all" />
+<meta name="keywords" content="Izrada web stranica, web studio Istra" />
+<meta name="author" content="Valeron design studio" />
+<link rel="apple-touch-icon" sizes="57x57" href="img/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="img/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="img/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="img/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="img/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="img/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="img/android-chrome-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="img/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="img/manifest.json">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-TileImage" content="img/mstile-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="css/animsition.min.css">
+<link rel="stylesheet" type="text/css" href="css/grid.min.css" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/menu.css" />
+<link rel="stylesheet" type="text/css" href="css/overlay.css" />
+<link rel="stylesheet" href="css/social.css">
+<link rel="stylesheet" href="css/banner.css">
+<link rel="stylesheet" href="css/you-video.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.0.8/font-awesome-animation.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+</head>
+<body>
+
+<div class="animsition-overlay">
+  <div class="horBar2Bxx wow fadeInLeftBig" data-wow-duration="3s"></div>
+  <header class="main_h">
+    <div class="menufix"> <a class="logo" href="index.html"><img src="images/logo-sample.png" alt="Hello"></a>
+      <div class="mobile-toggle"> <span></span> <span></span> <span></span> </div>
+      <nav>
+        <ul>
+          <li class="line"><a class="out animsition-link" href="index.html">HOME</a></li>
+          <li class="line"><a class="out animsition-link" href="flineal.html">F. LINEAL</a></li>
+          <li class="line"><a class="out animsition-link" href="plineal.html">P. LINEAL</a></li>
+          <li><a class="out active animsition-link" href="logica.html">LOGICA</a></li>
+          <li class="line"><a class="out animsition-link" href="graficas.html">GRAFICADOR</a></li>
+          <li class="line"><a class="out animsition-link" href="contact.html">NOSOTROS</a></li>
+        </ul>
+      </nav>
+    </div>
+    <!-- / row -->
+  </header>
+
+
+<div class="grid flex16">
+    <div class="row">
+      <div class="colw_6">
+        <h1 id="title-sub1">Resolución</h1>
+        <!--<h2 class="ajustar-size" id="mititulo">PROGRAMACION</h2>-->
+        <h2 class="ajustar-size" id="mititulo">Calculadora</h2>
+        <h2 id="title-sub2">logica.</h2>
+
+      </div>
+      <!-- END colw_6 -->
+
+      <div class="colw_6 wow zoomIn">
+          <div class="box-fix3">
+
+            <div class="social">  </div>
+          </div>
+        </div>
+        <!-- END col_6 -->
+</div>
+
+<div id="Logica" style="display:inline">
+
+<div class="container container-chulo">
+  <div class="row">
+    <div id="PLF">Arma tu proposición con los botones de abajo</div>
+  </div>
+  <div class="row conpadding">
+    <div class="col-xs-12 col-sm-7 col-md-7 col-lg-7">
+      <div class="division1">
+        <div class="par1">
+          <div class="buttonWrapper2">
+            <button class="vL1 big vL3i btn btn-info" disabled>(</button>
+          </div>
+          <div class="buttonWrapper2">
+            <button class="vL1 big vL3f btn btn-info" disabled>)</button>
+          </div>
+          <div class="buttonWrapper2">
+            <button class="vL1 big oL btn btn-info" disabled="disabled">∨</button>
+          </div>
+        </div>
+        <div class="par2">
+          <div class="buttonWrapper2">
+            <button class="vL1 big oL btn btn-info" disabled="disabled">∧</button>
+          </div>
+          <div class="buttonWrapper2">
+            <button class="vL1 big oL btn btn-info" disabled="disabled">⇒</button>
+          </div>
+          <div class="buttonWrapper2">
+            <button class="vL1 big oL btn btn-info" disabled="disabled">⇔</button>
+          </div>
+        </div>
+      </div>   <!-- Fin Division 1 -->
+
+      <div class="division2">
+        <div class="par3">  <!-- par 3 -->
+          <div class="buttonWrapper">
+            <button class="vL1 big vL3n btn btn-info" disabled>∼</button>
+            <button class="smallV invisible">V</button><button class="smallF invisible">F</button>
+          </div>
+          <div class="buttonWrapper" id="vf0">
+            <button class="aL1 vL1 vL2 big btn btn-info" id="thep" disabled>P</button>
+            <button class="smallV" id="pV">V</button><button class="smallF" id="pF">F</button>
+          </div>
+          <div class="buttonWrapper" id="vf1">
+            <button class="aL1 vL1 vL2 big btn btn-info" id="theq" disabled>Q</button>
+            <button class="smallV" id="qV">V</button><button class="smallF" id="qF">F</button>
+          </div>
+        </div>
+        <div class="par4">  <!-- par 4 -->
+          <div class="buttonWrapper" id="vf2">
+            <button class="aL1 vL1 vL2 big btn btn-info" id="ther" disabled>R</button>
+            <button class="smallV" id="rV">V</button><button class="smallF" id="rF">F</button>
+          </div>
+          <div class="buttonWrapper" id="vf3">
+            <button class="aL1 vL1 vL2 big btn btn-info" id="thes" disabled>S</button>
+            <button class="smallV" id="sV">V</button><button class="smallF" id="sF">F</button>
+          </div>
+          <div class="buttonWrapper" id="vf4">
+            <button class="aL1 vL1 vL2 big btn btn-info" id="thez" disabled>Z</button>
+            <button class="smallV" id="zV">V</button><button class="smallF" id="zF">F</button>
+          </div>
+        </div>
+      </div>  <!-- Fin Division 2 -->
+      <div class="manejo">
+        <button class="btn btn-info" id="respuesta">Ver Resultado</button>
+        <button class="btn btn-danger" id="borrarPL">Borrar</button>
+        <button class="btn btn-warning" id="restartPL">Reiniciar</button>
+      </div>
+    </div>  <!-- armacion -->
+    <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5 resultadito">
+      <p id="VoF">¿ ?</p><br><br>
+      <p id="ins1"><strong><i class="glyphicon glyphicon-triangle-right"></i> Asigna valores de verdad <br> (<span id="spV">V</span> o <span id="spF">F</span>) a las proposiciones simples que vayas a usar (P, Q, R, S, Z).</strong></p>
+      <p id="ins2" style="display:none"><strong><i class="glyphicon glyphicon-triangle-right"></i> Arma "cualquier" proposición lógica con los botones disponibles.</strong></p>
+      <p id="ins3" style="display:none"><strong><i class="glyphicon glyphicon-triangle-right"></i> Si te fijas, algunos elementos se bloquean y desbloquean para que escribas correctamente tu proposición.</strong></p>
+      <p id="ins4" style="display:none"><strong><i class="glyphicon glyphicon-triangle-right"></i> Puedes ver el resultado, borrar la proposición o bien reiniciar todo.</strong></p>
+    </div>
+  </div>
+
+</div>  <!-- Fin Container chulo -->
+</div>  <!-- Fin Logica -->
+
+<div class="container container-chulo desarrollo">
+    <center> <h4>Procedimiento: </h4></center>
+    <div class="row procedimiento">
+      <p id="resolviendo">Aquí verá el procedimiento de cómo se resolvió la proposición, algo útil en caso de contar con uno o varios paréntesis.</p>
+    </div>
+</div>
+
+<div class="container container-chulo tablitas">
+  <center> <h4>Tablas de verdad:</h4></center>
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+      <img src="img/Conjunción.jpg">
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+      <img src="img/Disjunción.jpg">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+      <img src="img/Condicional.jpg">
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+    
+      <img src="img/Bicondicional.jpg">
+    </div>
+  </div>
+
+
+</div>
+
+
+  <div class="grid flex16">                  <!-- Footer -->
+    <div class="row paddbott100"></div>      <!-- Un padding para evitar conflictos con el footer -->
+
+    <p class="dolje"><script>document.write(new Date().getFullYear())</script> | TOD group | Comprueba y multiplica tu conocimiento | <a href="http://pillan.inf.uct.cl/~imolina/" class="linkline">Algebra virtual</a></p>
+
+  </div>
+
+</div>  <!-- Fin .animsition-overlaj -->
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.matchHeight-min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/animsition.min.js"></script>
+<script>
+$(".enticlick").click(function() {
+  window.location = $(this).find("a").attr("href");
+  return false;
+});
+</script>
+<script src="js/functions.js"></script>
+<script src="js/you-video.js"></script>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-15815880-3']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</body>
+</html>

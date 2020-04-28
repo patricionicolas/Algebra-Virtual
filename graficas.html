@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Graficas</title>
+<meta property="og:url" content="http://pillan.inf.uct.cl/~imolina/" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Sistema de enseñanza y resolucion" />
+<meta property="og:description" content="Sistema de enseñanza y resolucion de problemas algebraicos" />
+<meta property="og:image" content="http://civilgeeks.com/wp-content/uploads/2011/10/posavasos-matematicos.jpg" />
+<meta name="description" content="Free responsive web template Istria by Valeron design studio" />
+<meta name="msapplication-tap-highlight" content="no" />
+<meta name="robots" content="index,follow,all" />
+<meta name="keywords" content="Izrada web stranica, web studio Istra, blog" />
+<meta name="author" content="Valeron design studio" />
+<link rel="apple-touch-icon" sizes="57x57" href="img/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="img/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="img/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="img/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="img/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="img/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="img/android-chrome-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="img/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="img/manifest.json">
+
+<meta name="msapplication-TileImage" content="img/mstile-144x144.png">
+
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="css/animsition.min.css">
+<link rel="stylesheet" type="text/css" href="css/grid.min.css" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/menu.css" />
+<link rel="stylesheet" type="text/css" href="css/overlay.css" />
+<link rel="stylesheet" href="css/social.css">
+<link rel="stylesheet" href="css/imgover.css">
+<link href="css/lightgallery.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.0.8/font-awesome-animation.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
+
+
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="http://maurizzzio.github.io/function-plot/js/function-plot.js"></script>
+<meta charset="utf-8">
+
+<!-- Bootstrap -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<!--JQuery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<script id="jsbin-javascript">
+$(document).ready(Principal);
+      function Principal(){
+        Grafica();
+        document.getElementById("dataFuncion").value="";
+        $("#btnInfo").click(Grafica);
+        $("#btnElevado").click(function(){agregaAyuda("^")});
+        $("#btnElevado2").click(function(){agregaAyuda("^2")});
+        $("#btnSeno").click(function(){agregaAyuda("sin(x)")});
+        $("#btnCoseno").click(function(){agregaAyuda("cos(x)")});
+        $("#btnTangente").click(function(){agregaAyuda("tan(x)")});
+        $("#btnParentesis").click(function(){agregaAyuda("()")});
+        $("#btnAbreParentesis").click(function(){agregaAyuda("(")});
+        $("#btnCierraParentesis").click(function(){agregaAyuda(")")});
+
+      }   //fin funcion principal
+
+function conEnter(e){
+  if(e.keyCode==13){
+    Grafica();
+  }
+}
+
+
+
+function Grafica() {
+  try {
+    functionPlot({
+      //heigth: 1000,
+      width:700,
+      target: '#grafico',
+      data: [{
+        fn: document.getElementById('dataFuncion').value,
+        derivative: {
+          fn: '2x',
+          updateOnMouseMove: false
+        }
+      }]
+    });
+    }
+    catch (err) {
+      console.log(err);
+      alert("Datos no soportados para esa función");
+    }
+  }
+
+function agregaAyuda(argumento){
+  var info = document.getElementById('dataFuncion').value;
+  document.getElementById("dataFuncion").value=info+argumento;
+  dataFuncion.focus();
+}
+
+</script>
+
+</head>
+<body>
+<div class="animsition-overlay">
+  <section id="section-1">
+    <div class="horBar2Bxx wow fadeInLeftBig" data-wow-duration="3s"></div>
+    <header class="main_h">
+      <div class="menufix"> <a class="logo" href="index.html"><img src="images/logo-sample.png" alt="Hello"></a>
+        <div class="mobile-toggle"> <span></span> <span></span> <span></span> </div>
+        <nav>
+          <ul>
+            <li class="line"><a class="out animsition-link" href="index.html">HOME</a></li>
+            <li class="line"><a class="out animsition-link" href="flineal.html">F. LINEAL</a></li>
+            <li class="line"><a class="out animsition-link" href="plineal.html">P. LINEAL</a></li>
+            <li class="line"><a class="out animsition-link" href="logica.html">Lógica </a></li>
+            <li><a class="out active animsition-link" href="graficas.html">GRAFICADOR</a></li>
+            <li class="line"><a class="out animsition-link" href="contact.html">NOSOTROS</a></li>
+          </ul>
+        </nav>
+      </div>
+      <!-- / row -->
+
+    </header>
+    <div class="grid flex16">
+    <div class="row">
+      <div class="colw_6">
+        <h1 id="title-sub1">Resolución</h1>
+        <!--<h2 class="ajustar-size" id="mititulo">PROGRAMACION</h2>-->
+        <h2 id="title-sub2">GRAFICADOR.</h2>
+      </div>
+      <!-- END colw_6 -->
+
+      <div class="colw_6 wow zoomIn">
+          <div class="box-fix">
+
+            <div class="social">  </div>
+          </div>
+        </div>
+        <!-- END col_6 -->
+
+      </div>
+      <!-- END row -->
+    </div>
+    <!-- End GRID FLEX -->
+
+  </section>
+  <!-- END #section-1 -->
+
+
+
+
+  <section id="blog">
+    <div class="colw_12 spec-l ">
+    <p>Las gráficas son parte fundamental en el área de algebra. En esta sección buscamos facilitar las cosas para ti y hacer un graficador, en el cual con solo escribir tu función y dar un simple clic, podrás apreciar cómo se ven tus datos en el plano cartesiano de ejes x e y.
+    </p>
+  </div>
+    <div class="grid flex16">
+      <div class="row">
+        <!---
+        <h2 class="title-blog wow fadeInUp" data-wow-duration="2s" style="visibility: visible; animation-duration: 2s; animation-name: fadeInUp;">Quieres verificar el gráfico de una función? Do it!.</span></h2>
+      -->
+
+        <div class="col_9 beta">
+          <div class="horBar2Bxx wow fadeInLeftBig" data-wow-duration="3s"></div>
+
+          <div class="boxwsha column3" id="grafico">
+               <div class="col-xs-9">
+                <div class="input-group">
+                  <div class="input-group-addon"><strong style="font: 15px/100% 'Palatino Linotype', sans-serif; ">f(x)=</strong></div>
+                  <input type="text" class="form-control" id="dataFuncion" value="0" placeholder="Ingrese su función para graficar" onkeypress="conEnter(event)">
+                </div>
+               </div>
+
+               <span class="input-group-btn">
+                  <button  class="btn btn-info" id="btnInfo" type="submit" >Desplegar gráfico</button>
+               </span><br>
+          </div>
+          <!-- END boxwsha -->
+        </div>
+        <!-- END col_4 -->
+
+
+
+        <div class="col_3 beta">
+
+          <div class="boxwsha column3 gallerymore">
+              <h3 id="title-sub1" style="visibility: visible; animation-duration: 2s; animation-name: fadeInUp;">Ayuda</h3>
+
+                     <span class="input-group-btn XL">
+                       <button  class="col_6 btn btn-info" id="btnElevado" type="submit">Elevado</button>
+                       <button  class="col_6 btn btn-info" id="btnElevado2" type="submit">Elevado a 2</button>
+                       <button  class="col_6 btn btn-info" id="btnSeno" type="submit">Seno(x)</button>
+                       <button  class="col_6 btn btn-info" id="btnCoseno" type="submit">Coseno(x)</button>
+                       <button  class="col_6 btn btn-info" id="btnTangente" type="submit">Tangente(x)</button><br>
+                       <button  class="col_6 btn btn-info" id="btnAbreParentesis" type="submit">(</button>
+                       <button  class="col_6 btn btn-info" id="btnCierraParentesis" type="submit">)</button>
+                       <button  class="col_6 btn btn-info" id="btnParentesis" type="submit">( )</button>
+                     </span>
+
+
+          </div>
+          <!-- END boxwsha -->
+        </div>
+        <!-- END col_4 -->
+
+      </div>
+      <!-- END row -->
+    </div>
+    <!-- End GRID FLEX -->
+
+  </section>
+  <!-- END #section-1 -->
+
+  <p class="dolje"><script>document.write(new Date().getFullYear())</script> | TOD group | Comprueba y multiplica tu conocimiento | <a href="http://pillan.inf.uct.cl/~imolina/" class="linkline">Algebra virtual</a></p>
+</div>
+<!-- END .animsition-overlaj -->
+
+
+
+
+
+
+
+
+</div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.matchHeight-min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/animsition.min.js"></script>
+<script src="js/lightgallery-all.min.js"></script>
+<script type="text/javascript">
+        $(document).ready(function(){
+            $('#gallery-1, #gallery-2, #gallery-3').lightGallery();
+        });
+    $('#gallery-99').lightGallery({
+        thumbnail:true,
+        animateThumb: false,
+        showThumbByDefault: false,
+    speed: 1200
+    });
+
+</script>
+<script src="js/jquery.the-modal.js"></script>
+<script type="text/javascript">
+    jQuery(function($){
+      // bind event handlers to modal triggers
+      $('body').on('click', '.trigger', function(e){
+        e.preventDefault();
+        $('#test-modal').modal().open();
+      });
+        $('body').on('click', '.trigger2', function(e){
+        e.preventDefault();
+        $('#test-modal2').modal().open();
+      });
+
+      // attach modal close handler
+      $('.modal .close').on('click', function(e){
+        e.preventDefault();
+        $.modal().close();
+      });
+
+      // below isn't important (demo-specific things)
+      $('.modal .more-toggle').on('click', function(e){
+        e.stopPropagation();
+        $('.modal .more').toggle();
+      });
+    });
+  </script>
+<script src="js/functions.js"></script>
+<script type="text/javascript">
+$( document ).ready(function() {
+$('.menu-item').hover(function () {
+    $('#active', this).toggleClass('active');
+    $('#active', this).css({'display':'block'});
+});
+});
+</script>
+<script type="text/javascript">
+$(function(){
+  $(".textlimit").each(function(i){
+    len=$(this).text().length;
+    if(len>100)
+    {
+      $(this).text($(this).text().substr(0,100)+'...');
+    }
+  });
+});
+</script>
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-15815880-3']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<style> body {overflow-x:hidden;}</style>
+</body>
+</html>

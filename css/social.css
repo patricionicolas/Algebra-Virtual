@@ -1,0 +1,161 @@
+.box-fix {
+  min-height: 0px;
+  width: 95%;
+  overflow: hidden;
+  position: relative;
+  /*border: 1px solid #FFF;*/
+  /*box-shadow: 0 1px 3px rgba(60, 90, 152, 0.7);*/
+  text-align: center;
+  font-weight: 700;
+  /*background-color: #E9F0F4;*/
+  background-image: url(../images/Diapositiva3.JPG);
+  /*background-image: url(../images/web-dizajn-960bIZQUIERDA.jpg);*/
+
+  no-repeat center center fixed;		
+-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.box-fix1 {
+  min-height: 0px;
+  width: 95%;
+  overflow: hidden;
+  position: relative;
+  /*border: 1px solid #FFF;*/
+  /*box-shadow: 0 1px 3px rgba(60, 90, 152, 0.7);*/
+  text-align: center;
+  font-weight: 700;
+  /*background-color: #E9F0F4;*/
+  background-image: url(../images/maxresdefault.jpg);
+  /*background-image: url(../images/web-dizajn-960bIZQUIERDA.jpg);*/
+
+  no-repeat center center fixed;    
+-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.box-fix2 {
+  min-height: 0px;
+  width: 95%;
+  overflow: hidden;
+  position: relative;
+  /*border: 1px solid #FFF;*/
+  /*box-shadow: 0 1px 3px rgba(60, 90, 152, 0.7);*/
+  text-align: center;
+  font-weight: 700;
+  /*background-color: #E9F0F4;*/
+  background-image: url(../images/funcionesss.jpg);
+  /*background-image: url(../images/web-dizajn-960bIZQUIERDA.jpg);*/
+
+  no-repeat center center fixed;    
+-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.box-fix3 {
+  min-height: 0px;
+  width: 95%;
+  overflow: hidden;
+  position: relative;
+  /*border: 1px solid #FFF;*/
+  /*box-shadow: 0 1px 3px rgba(60, 90, 152, 0.7);*/
+  text-align: center;
+  font-weight: 700;
+  /*background-color: #E9F0F4;*/
+  background-image: url(../images/logicaaa.jpg);
+  /*background-image: url(../images/web-dizajn-960bIZQUIERDA.jpg);*/
+
+  no-repeat center center fixed;    
+-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+.box-fix .social {
+  height: 0px;
+  position: relative;
+  left: 50%;
+  border: 1px solid transparent;
+  width: 0;
+  z-index: 10;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding-top: 40px;
+  padding-bottom: 70px;
+  -webkit-transition: all 0.4s 0s,
+border 0.4s 0.6s,
+height 0.4s 0.4s,
+margin 0.4s 0.4s;
+  transition: all 0.4s 0s,
+border 0.4s 0.6s,
+height 0.4s 0.4s,
+margin 0.4s 0.4s;
+}
+.box-fix1 .social {
+  height: 0px;
+  position: relative;
+  left: 50%;
+  border: 1px solid transparent;
+  width: 0;
+  z-index: 10;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding-top: 40px;
+  padding-bottom: 70px;
+  -webkit-transition: all 0.4s 0s,
+border 0.4s 0.6s,
+height 0.4s 0.4s,
+margin 0.4s 0.4s;
+  transition: all 0.4s 0s,
+border 0.4s 0.6s,
+height 0.4s 0.4s,
+margin 0.4s 0.4s;
+}
+.box-fix2 .social {
+  height: 0px;
+  position: relative;
+  left: 50%;
+  border: 1px solid transparent;
+  width: 0;
+  z-index: 10;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding-top: 40px;
+  padding-bottom: 70px;
+  -webkit-transition: all 0.4s 0s,
+border 0.4s 0.6s,
+height 0.4s 0.4s,
+margin 0.4s 0.4s;
+  transition: all 0.4s 0s,
+border 0.4s 0.6s,
+height 0.4s 0.4s,
+margin 0.4s 0.4s;
+}
+.box-fix3 .social {
+  height: 0px;
+  position: relative;
+  left: 50%;
+  border: 1px solid transparent;
+  width: 0;
+  z-index: 10;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding-top: 40px;
+  padding-bottom: 70px;
+  -webkit-transition: all 0.4s 0s,
+border 0.4s 0.6s,
+height 0.4s 0.4s,
+margin 0.4s 0.4s;
+  transition: all 0.4s 0s,
+border 0.4s 0.6s,
+height 0.4s 0.4s,
+margin 0.4s 0.4s;
+}
+
+
+
